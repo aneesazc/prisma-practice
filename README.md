@@ -1,7 +1,6 @@
 # Prisma Getting Started
 
-Short description of your project.
-
+Guide to using prisma orm with typescript for querying a postgresql db 
 
 
 ## Getting Started
@@ -90,6 +89,7 @@ Short description of your project.
     description String
     done        Boolean @default(false)
     userId      Int
+    user        User    @relation(fields: [userId], references: [id])
     }
     ```
 
